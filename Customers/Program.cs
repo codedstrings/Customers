@@ -18,6 +18,13 @@ namespace Customers
                 PostalCode = 129221
             };
 
+            Order order1 = new Order();
+            order1.OrderNumber = "O10";
+            order1.OrderQuantity = 4;
+
+
+            _dbContext.Customers.Add(customer1);
+            _dbContext.SaveChanges();
 
         }
     }

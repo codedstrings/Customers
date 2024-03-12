@@ -11,5 +11,6 @@ namespace Customers.models
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public int Stock { get; set; }
+        public List<Order> Orders { get; set; } //many to many
     }
 }
