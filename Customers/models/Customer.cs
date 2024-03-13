@@ -12,6 +12,8 @@ namespace Customers.models
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
+        
+        public int Age { get; set; }
 
         public CustomerAddress? CustomerAddress { get; set; } //one to one
         public List<Order> Orders { get; set; } //one-to Many
